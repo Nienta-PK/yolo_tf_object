@@ -1,0 +1,17 @@
+# Python build and cache
+__pycache__/
+*.pyc
+.pytest_cache
+
+# ROS 2 Local Build Folders
+install/
+build/
+log/
+
+# Large Model Files
+*.pt
+*.onnx
+
+# Local workspace files
+.vscode/
+.env
