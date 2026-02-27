@@ -52,7 +52,7 @@ Launches the YOLO inference engine. Note the image_reliability:=2 which matches 
 
 ```bash
 ros2 launch yolo_bringup yolo.launch.py \
-  model:=3rd_model.pt \
+  model:=~/ros2_ws/src/yolo_tf_object/model/3rd_model.pt \
   use_3d:=True \
   half:=True \
   fuse_model:=True \
@@ -79,6 +79,10 @@ ros2 launch yolo_tf_object yolo_visualization.launch.py
 ### 4.Visualization
 
 To see the results, open **rviz2** and configure the following displays:
+
+```
+ros2 run rviz2 rviz2 -d ~/ros2_ws/src/yolo_tf_object/rviz/yolo_tf_object.rviz
+```bash
 
 | Display Type | Topic / Setting | Description |
 | :--- | :--- | :--- |
