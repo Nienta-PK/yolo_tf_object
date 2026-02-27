@@ -22,3 +22,19 @@ git clone [https://github.com/Nienta-PK/yolo_tf_object.git](https://github.com/N
 cd ~/ros2_ws
 colcon build --symlink-install
 source install/setup.bash```
+
+---
+
+## 🚀 How to Launch
+
+For the best performance, it is recommended to run these commands in separate terminals.
+
+'''bash
+ros2 launch realsense2_camera rs_launch.py \
+  rgb_camera.profile:=640x480x30 \
+  depth_module.profile:=640x480x30 \
+  rgb_camera.qos:=SENSOR_DATA \
+  depth_module.qos:=SENSOR_DATA \
+  align_depth.enable:=true \
+  pointcloud.enable:=true \
+  enable_color:=true'''
