@@ -9,7 +9,6 @@ build/
 log/
 
 # Large Model Files
-*.pt
 *.onnx
 
 # Local workspace files
