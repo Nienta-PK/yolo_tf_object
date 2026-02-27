@@ -80,9 +80,9 @@ ros2 launch yolo_tf_object yolo_visualization.launch.py
 
 To see the results, open **rviz2** and configure the following displays:
 
-```
-ros2 run rviz2 rviz2 -d ~/ros2_ws/src/yolo_tf_object/rviz/yolo_tf_object.rviz
 ```bash
+ros2 run rviz2 rviz2 -d ~/ros2_ws/src/yolo_tf_object/rviz/yolo_tf_object.rviz
+```
 
 | Display Type | Topic / Setting | Description |
 | :--- | :--- | :--- |
